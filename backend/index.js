@@ -9,9 +9,12 @@ const app = express();
 // MIDDLEWARE FOR PARSING REQUEST BODY
 app.use(express.json());
 
+//Allow all origins for CORS
+// app.use(cors());
+
 //Allow custom origins for CORS
 app.use(cors({
-    origin: 'http://localhost:3000',
+    origin: 'http://localhost:5173',
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     allowedHeaders: ['Content-Type'],
 }));
