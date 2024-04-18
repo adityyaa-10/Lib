@@ -67,7 +67,7 @@ const EditBook = () => {
                     />
                 </div>
                 <div className="my-4 ">
-                    <label className='text-xl mr-4 text-gray-500'>Publish Year</label>
+                    <label className='text-xl mr-4 text-gray-500'>Complete By</label>
                     <input
                         type="number"
                         value={publishYear}
